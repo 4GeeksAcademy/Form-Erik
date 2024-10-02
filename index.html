@@ -9,7 +9,7 @@
 </head>
 <body>
 <div>
-    <div class="row col-10 g-3 mt-3 mx-auto border border-secondary rounded-top bg-secondary ">
+    <div class="row col-10 g-3 mt-3 mx-auto border border-secondary rounded-top bg-secondary">
         <h1>Payment form example</h1>
     </div>
         <form class="col-10 mx-auto border border-secondary rounded-bottom">
@@ -20,16 +20,20 @@
                 <div class="container-fluid d-inline-flex p-0">
                     <div class="w-50 mb-3 mx-1">
                         <label for="Card #" class="form-label ">Card #</label>
-                        <input type="text" class="form-control " id="card" placeholder="XXXXXXXXXXXXXXX" pattern="[0-9]{20}">
+                        <input type="text" class="form-control border-secondary" id="card" placeholder="XXXXXXXXXXXXXXX" pattern="[0-9]{20}">
                       </div>
                     <div class="w-25 g-3 mb-3 mx-1">
-                        <label for="CVC #" class="form-label ">Card #</label>
-                        <input type="text" class="form-control " id="cvc" placeholder="0000" pattern="[0-9]{20}">
+                        <label for="CVC" class="form-label ">CVC</label>
+                        <input type="text" class="form-control border-secondary" id="cvc" placeholder="0000" pattern="[0-9]{4}">
                     </div>
+
+
                     <div class="w-40 g-3 mb-3 mx-1">
-                        <label for="Amount" class="form-label ">Amount</label>
-                        <input type="text" class="form-control " id="amount">
+                        <label for="Amount" class="form-label ">Amount <i class="fa-solid fa-dollar-sign"></i></label>
+                        <input type="text" class="form-control border-secondary" id="amount">
                     </div>
+
+                    
                 </div>
              </div>
 
@@ -37,13 +41,13 @@
             <div class="container w-50 p-0 ms-3 me-1">
                     <div class="w-100 mb-3">
                         <label for="First name" class="form-label mx-1">First  Name</label>
-                        <input type="text" class="form-control mx-1" id="fn">
+                        <input type="text" class="form-control mx-1 border-secondary" id="fn">
                     </div>
                     <div class="w-100 mb-3">
                         <label for="City" class="form-label mx-1">City</label>
-                        <input type="text" class="form-control mx-1" id="ct">
+                        <input type="text" class="form-control mx-1 border-secondary" id="ct">
                     </div>
-                    <div class="col-6 p-0 m-0 ">
+                    <div class="col-5 p-0 m-0 ">
                         <p>We accept:</p>
                         <div class="container-fluid border border-secondary bg-secondary rounded me-3 p-1 ">
                         <div class="form-check form-check-inline">
@@ -69,14 +73,14 @@
             <div class="container w-50 p-0 me-3 ms-1">
                 <div class="w-100 mb-3">
                     <label for="Second Name" class="form-label mx-1">Second Name</label>
-                    <input type="text" class="form-control mx-1" id="sn">
+                    <input type="text" class="form-control mx-1 border-secondary" id="sn">
                 </div>
 
               
                 <div class="container-fluid d-inline-flex p-0 ">
                     <div class="w-50 g-3 mb-3 mx-1">
-                        <label for="inputState" class="form-label">State</label>
-                        <select id="inputState" class="form-select">
+                        <label for="inputState" class="form-label border-secondary">State</label>
+                        <select id="inputState" class="form-select border-secondary">
                           <option selected>Gerona</option>
                           <option>Barcelona</option>
                           <option>Tarragona</option>  
@@ -84,12 +88,12 @@
                 </div>
                     <div class="w-50 mb-3 mx-1">
                         <label for="postalcode" class="form-label ">Postal code</label>
-                        <input type="text" class="form-control " id="postalcode" placeholder="00000" pattern="[0-9]{5}">
+                        <input type="text" class="form-control border-secondary" id="postalcode" placeholder="00000" pattern="[0-9]{5}">
                       </div>          
                      </div>
                      <div class="form-floating p-0  ">
                         <p>Comments</p>
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <textarea class="form-control border-secondary" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
                         <p class="text-secondary">Add any notes here</p>
                       </div>
                     </div>
@@ -100,13 +104,11 @@
 
 
 
-        <div class="container m-3 p-1 ">
-            <div>
-                <button class="btn btn-primary" type="submit">Submit form</button>
+       
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end m-3">
+                <button class="btn btn-secondary me-md-2" type="reset" value="reset">Cancel</button>
+                <button class="btn btn-primary " type="submit">Send</button>
               </div>
-        </div>
-       
-       
 
            
     </form>
